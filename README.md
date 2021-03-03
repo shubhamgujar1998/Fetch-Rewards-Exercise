@@ -30,16 +30,16 @@ Spring Boot Application
 
 1.  /saveUser (http://localhost:8080/saveUser)
 
-This is a POST route to add payer transaction with the following
-attributes:
+   This is a POST route to add payer transaction with the following
+   attributes:
 
-id: int, payer: String, points: int, timestamp: String
+   id: int, payer: String, points: int, timestamp: String
 
-Attribute id is auto generated so no need to input in the body of
-POSTMAN, and Timestamp is using String datatype which is then
-converted to Date using SimpleDateFormat in Java8
+   Attribute id is auto generated so no need to input in the body of
+   POSTMAN, and Timestamp is using String datatype which is then
+   converted to Date using SimpleDateFormat in Java8
 
-Input the following JSON format in POSTMAN one by one:
+   Input the following JSON format in POSTMAN one by one:
 
 ```sh
 { "payer": "DANNON", "points": 1000, "timestamp": "2020-11-02T14:00:00Z" }
@@ -52,7 +52,7 @@ Input the following JSON format in POSTMAN one by one:
 
 2.  /balance (http://localhost:8080/balance)
 
-This is a GET route to show all the balances of payer and their points
+   This is a GET route to show all the balances of payer and their points
 
 ```sh
 { 
@@ -65,8 +65,8 @@ This is a GET route to show all the balances of payer and their points
 
 3.  /deduct (http://localhost:8080/deduct)
 
-This is a POST route to deduct the oldest points first. Send a POST
-request body:
+   This is a POST route to deduct the oldest points first. Send a POST
+   request body:
 ```sh
 {
    "points": 5000
