@@ -26,7 +26,7 @@ mvn exec:java -Dexec.mainClass=com.shubham.FetchRewardsExerciseApplication
 Import the project in Eclipse or IntelliJ as Maven project to run the
 Spring Boot Application
 
-## Using POSTMAN to check our ENDPOINTS:**
+## Using POSTMAN to check our ENDPOINTS:
 
 __1.  /saveUser (http://localhost:8080/saveUser)__
 
