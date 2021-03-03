@@ -1,8 +1,8 @@
-# Fetch rewards coding exercise created using Spring boot 2.4.3**
+# Fetch rewards coding exercise created using Spring boot 2.4.3
 
 To download the application on your local machine:
 
-git clone https://
+git clone https://github.com/shubhamgujar1998/Fetch-Rewards-Exercise
 
 **Software Requirements:**
 
