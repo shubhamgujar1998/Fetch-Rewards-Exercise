@@ -15,11 +15,11 @@ git clone https://github.com/shubhamgujar1998/Fetch-Rewards-Exercise
 Open root folder in terminal where you will see pom.xml and src folder
 and execute the following commands:
 ```sh
-1.  mvn compile
+mvn compile
 
-2.  mvn clean install
+mvn clean install
 
-3.  mvn exec:java
+mvn exec:java
     -Dexec.mainClass=com.shubham.FetchRewardsExerciseApplication
 ```
 **Running by Eclipse or IntelliJ IDE:**
