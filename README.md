@@ -74,9 +74,11 @@ This is a GET route to show all the balances of payer and their points
 This is a POST route to deduct the oldest points first. Send a POST
 request body:
 ```sh
- {
-    \"points\": 5000
- }
+{
+   	 	"points": 5000
+}
+![image](https://user-images.githubusercontent.com/43499410/109847260-97a07e80-7c14-11eb-94b8-b9dc7966f912.png)
+
 ```
 The response received below shows how the points are deducted with
 respect to transaction date:
