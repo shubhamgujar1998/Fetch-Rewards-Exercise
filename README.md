@@ -19,8 +19,7 @@ mvn compile
 
 mvn clean install
 
-mvn exec:java
-    -Dexec.mainClass=com.shubham.FetchRewardsExerciseApplication
+mvn exec:java -Dexec.mainClass=com.shubham.FetchRewardsExerciseApplication
 ```
 **Running by Eclipse or IntelliJ IDE:**
 
@@ -34,14 +33,14 @@ Spring Boot Application
 This is a POST route to add payer transaction with the following
 attributes:
 
-> id: int, payer: String, points: int, timestamp: String
->
-> Attribute id is auto generated so no need to input in the body of
-> POSTMAN, and Timestamp is using String datatype which is then
-> converted to Date using SimpleDateFormat in Java8
->
-> Input the following JSON format in POSTMAN one by one:
->
+id: int, payer: String, points: int, timestamp: String
+
+Attribute id is auto generated so no need to input in the body of
+POSTMAN, and Timestamp is using String datatype which is then
+converted to Date using SimpleDateFormat in Java8
+
+Input the following JSON format in POSTMAN one by one:
+
 > { \"payer\": \"DANNON\", \"points\": 1000, \"timestamp\":
 > \"2020-11-02T14:00:00Z\" }
 >
@@ -59,10 +58,9 @@ attributes:
 
 2.  /balance (http://localhost:8080/balance)
 
-> This is a GET route to show all the balances of payer and their points
+This is a GET route to show all the balances of payer and their points
 
-{
-
+> {
 > \"UNILEVER\": 200,
 >
 > \"MILLER COORS\": 10000,
@@ -76,24 +74,24 @@ attributes:
 This is a POST route to deduct the oldest points first. Send a POST
 request body:
 
-{
-
-\"points\": 5000
-
-}
+> {
+> 
+> \"points\": 5000
+> 
+> }
 
 The response received below shows how the points are deducted with
 respect to transaction date:
 
-{
-
-\"DANNON\": -100,
-
-\"UNILEVER\": -200,
-
-\"MILLER COORS\": -4700
-
-}
+> {
+> 
+> \"DANNON\": -100,
+> 
+> \"UNILEVER\": -200,
+> 
+> \"MILLER COORS\": -4700
+> 
+> }
 
 4.  /users (http://localhost:8080/users)
 
@@ -113,7 +111,3 @@ Payer.
 -   Click connect
 
 -   Select the USER database and run the query
-
-![Table Description automatically
-generated](media/image1.tiff){width="3.3in"
-height="4.245138888888889in"}
