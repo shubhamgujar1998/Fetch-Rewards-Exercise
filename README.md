@@ -1,4 +1,4 @@
-**Fetch rewards coding exercise created using Spring boot 2.4.3**
+#Fetch rewards coding exercise created using Spring boot 2.4.3**
 
 To download the application on your local machine:
 
