@@ -65,16 +65,14 @@ Spring Boot Application
 
 3.  /deduct (http://localhost:8080/deduct)
 
-   This is a POST route to deduct the oldest points first. Send a POST
-   request body:
+>   This is a POST route to deduct the oldest points first. Send a POST request body:
 ```sh
 {
    "points": 5000
 }
 
 ```
-The response received below shows how the points are deducted with
-respect to transaction date:
+> The response received below shows how the points are deducted with respect to transaction date:
 
 ```sh
 {
