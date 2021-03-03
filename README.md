@@ -41,32 +41,26 @@ converted to Date using SimpleDateFormat in Java8
 
 Input the following JSON format in POSTMAN one by one:
 
-> { \"payer\": \"DANNON\", \"points\": 1000, \"timestamp\": \"2020-11-02T14:00:00Z\" }
-> 
-> { \"payer\": \"UNILEVER\", \"points\": 200, \"timestamp\": \"2020-10-31T11:00:00Z\" }
-> 
-> { \"payer\": \"DANNON\", \"points\": -200, \"timestamp\": \"2020-10-31T15:00:00Z\" }
-> 
-> { \"payer\": \"MILLER COORS\", \"points\": 10000,\"timestamp\": \"2020-11-01T14:00:00Z\"}
-> 
-> { \"payer\": \"DANNON\", \"points\": 300, \"timestamp\": \"2020-10-31T10:00:00Z\" }
-
+```sh
+{ "payer": "DANNON", "points": 1000, "timestamp": "2020-11-02T14:00:00Z" }
+{ "payer": "UNILEVER", "points": 200, "timestamp": "2020-10-31T11:00:00Z" }
+{ "payer": "DANNON", "points": -200, "timestamp": "2020-10-31T15:00:00Z" }
+{ "payer": "MILLER COORS", "points": 10000,"timestamp": "2020-11-01T14:00:00Z"}
+{ "payer": "DANNON", "points": 300, "timestamp": "2020-10-31T10:00:00Z" }
+```
 
 
 2.  /balance (http://localhost:8080/balance)
 
 This is a GET route to show all the balances of payer and their points
 
-> {
-> 
-> \"UNILEVER\": 200,
-> 
-> \"MILLER COORS\": 10000,
-> 
-> \"DANNON\": 1100
-> 
-> }
-
+```sh
+{ 
+   "UNILEVER": 200,
+   "MILLER COORS": 10000,
+   "DANNON": 1100
+}
+```
 
 
 3.  /deduct (http://localhost:8080/deduct)
@@ -75,23 +69,21 @@ This is a POST route to deduct the oldest points first. Send a POST
 request body:
 ```sh
 {
-   	 	"points": 5000
+   "points": 5000
 }
-![image](https://user-images.githubusercontent.com/43499410/109847260-97a07e80-7c14-11eb-94b8-b9dc7966f912.png)
 
 ```
 The response received below shows how the points are deducted with
 respect to transaction date:
 
-> {
-> 
-> \"DANNON\": -100,
-> 
-> \"UNILEVER\": -200,
-> 
-> \"MILLER COORS\": -4700
-> 
-> }
+```sh
+{
+   "DANNON": -100,
+   "UNILEVER": -200,
+   "MILLER COORS": -4700
+}
+
+```
 
 
 
