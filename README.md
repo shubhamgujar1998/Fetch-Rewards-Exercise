@@ -4,13 +4,13 @@ To download the application on your local machine:
 
 git clone https://github.com/shubhamgujar1998/Fetch-Rewards-Exercise
 
-**Software Requirements:**
+## Software Requirements:
 
 -   Java 8
 
 -   POSTMAN
 
-**Running by Command line:**
+**Run the application using Command line:**
 
 Open root folder in terminal where you will see pom.xml and src folder
 and execute the following commands:
@@ -21,12 +21,12 @@ mvn clean install
 
 mvn exec:java -Dexec.mainClass=com.shubham.FetchRewardsExerciseApplication
 ```
-**Running by Eclipse or IntelliJ IDE:**
+**Run the application using Eclipse or IntelliJ IDE:**
 
 Import the project in Eclipse or IntelliJ as Maven project to run the
 Spring Boot Application
 
-**Using POSTMAN to check our endpoints:**
+## Using POSTMAN to check our endpoints:**
 
 1.  /saveUser (http://localhost:8080/saveUser)
 
@@ -86,7 +86,6 @@ respect to transaction date:
 ```
 
 
-
 4.  /users (http://localhost:8080/users)
 
 This is a GET route which retrieves the user transaction history after
@@ -99,7 +98,7 @@ optional but also provides a list of all the transaction history per
 Payer.
 
 
-**To access the database:**
+## To access the database:
 
 -   Go to this url: <http://localhost:8080/h2/>
 
