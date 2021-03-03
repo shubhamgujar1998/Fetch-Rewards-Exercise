@@ -41,28 +41,28 @@ converted to Date using SimpleDateFormat in Java8
 
 Input the following JSON format in POSTMAN one by one:
 
-> { \"payer\": \"DANNON\", \"points\": 1000, \"timestamp\":
-> \"2020-11-02T14:00:00Z\" }
-> { \"payer\": \"UNILEVER\", \"points\": 200, \"timestamp\":
-> \"2020-10-31T11:00:00Z\" }
-> { \"payer\": \"DANNON\", \"points\": -200, \"timestamp\":
-> \"2020-10-31T15:00:00Z\" }
-> { \"payer\": \"MILLER COORS\", \"points\": 10000,\"timestamp\":
-> \"2020-11-01T14:00:00Z\"}
-> { \"payer\": \"DANNON\", \"points\": 300, \"timestamp\":
-> \"2020-10-31T10:00:00Z\" }
+> { \"payer\": \"DANNON\", \"points\": 1000, \"timestamp\": \"2020-11-02T14:00:00Z\" }
+ 
+> { \"payer\": \"UNILEVER\", \"points\": 200, \"timestamp\": \"2020-10-31T11:00:00Z\" }
+ 
+> { \"payer\": \"DANNON\", \"points\": -200, \"timestamp\": \"2020-10-31T15:00:00Z\" }
+ 
+> { \"payer\": \"MILLER COORS\", \"points\": 10000,\"timestamp\": \"2020-11-01T14:00:00Z\"}
+
+> { \"payer\": \"DANNON\", \"points\": 300, \"timestamp\": \"2020-10-31T10:00:00Z\" }
 
 2.  /balance (http://localhost:8080/balance)
 
 This is a GET route to show all the balances of payer and their points
 
 > {
+
 > \"UNILEVER\": 200,
->
+
 > \"MILLER COORS\": 10000,
->
+
 > \"DANNON\": 1100
->
+
 > }
 
 3.  /deduct (http://localhost:8080/deduct)
