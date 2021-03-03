@@ -91,7 +91,7 @@ respect to transaction date:
 This is a GET route which retrieves the user transaction history after
 adding new user or deducting points from the user so as to keep track on
 the transaction records
-
+<br/>
 The application runs locally, but also stores transaction history on H2
 database which is SQL and in-memory database. Accessing the database is
 optional but also provides a list of all the transaction history per
