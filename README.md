@@ -26,9 +26,9 @@ mvn exec:java -Dexec.mainClass=com.shubham.FetchRewardsExerciseApplication
 Import the project in Eclipse or IntelliJ as Maven project to run the
 Spring Boot Application
 
-## Using POSTMAN to check our endpoints:**
+## Using POSTMAN to check our ENDPOINTS:**
 
-1.  /saveUser (http://localhost:8080/saveUser)
+__1.  /saveUser (http://localhost:8080/saveUser)__
 
    This is a POST route to add payer transaction with the following
    attributes:
@@ -50,7 +50,7 @@ Spring Boot Application
 ```
 
 
-2.  /balance (http://localhost:8080/balance)
+__2.  /balance (http://localhost:8080/balance)__
 
    This is a GET route to show all the balances of payer and their points
 
@@ -63,16 +63,16 @@ Spring Boot Application
 ```
 
 
-3.  /deduct (http://localhost:8080/deduct)
+__3.  /deduct (http://localhost:8080/deduct)__
 
->   This is a POST route to deduct the oldest points first. Send a POST request body:
+This is a POST route to deduct the oldest points first. Send a POST request body:
 ```sh
 {
    "points": 5000
 }
 
 ```
-> The response received below shows how the points are deducted with respect to transaction date:
+The response received below shows how the points are deducted with respect to transaction date:
 
 ```sh
 {
@@ -84,7 +84,7 @@ Spring Boot Application
 ```
 
 
-4.  /users (http://localhost:8080/users)
+__4.  /users (http://localhost:8080/users)__
 
 This is a GET route which retrieves the user transaction history after
 adding new user or deducting points from the user so as to keep track on
